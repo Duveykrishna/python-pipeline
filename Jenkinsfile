@@ -1,11 +1,11 @@
 pipeline {
 	agent {
-		label 'ubuntu-slave'
+		label 'ubuntu'
 		}
 	stages {
 		stage ("pull scm python") {
 			steps {
-				git branch: 'python', url: 'https://github.com/gouravaas/Python-pipeline.git'
+				git branch: 'python', url: 'https://github.com/duveykrishna/Python-pipeline.git'
 				}
 			}
 		stage ("Build") {
